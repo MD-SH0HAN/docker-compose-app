@@ -1,0 +1,14 @@
+services:
+  backend:
+    build:
+      context: .
+    expose:
+      - "8000"
+
+  web:
+    build:
+      context: ./web
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
