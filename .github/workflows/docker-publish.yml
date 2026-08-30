@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      BACKEND_IMAGE: ghcr.io/${{ github.repository_owner }}/docker-compose-app-backend
-      WEB_IMAGE: ghcr.io/${{ github.repository_owner }}/docker-compose-app-web
+      BACKEND_IMAGE: ghcr.io/md-sh0han/docker-compose-app-backend
+      WEB_IMAGE: ghcr.io/md-sh0han/docker-compose-app-web
 
     steps:
       - name: Checkout
